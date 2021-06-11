@@ -1,0 +1,7 @@
+includes:
+	- vendor/phpstan/phpstan-mockery/extension.neon
+#parameters:
+#	ignoreErrors:
+#		- "#^Call to an undefined method(.*)NodeDefinition\\:\\:children\\(\\)\\.$#"
+#		- "#^(.*)RegisterEventListenerCompilerPass\\:\\:process\\(\\) has no return typehint specified.$#"
+#		- "#^(.*)EventQueue\\:\\:build\\(\\) has no return typehint specified.$#"
