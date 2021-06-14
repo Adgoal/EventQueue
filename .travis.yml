@@ -21,8 +21,8 @@ install:
 
 script:
   - make lint
-#  - make static-analysis
-#  - make coding-standards
+  - make static-analysis || true
+  - make coding-standards || true
   - make tests-unit
   - git log $(git describe --abbrev=0 --tags)...HEAD --no-merges --pretty=format:"* [%h](http://github.com/${TRAVIS_REPO_SLUG}/commit/%H) %s (%cN)"
 
